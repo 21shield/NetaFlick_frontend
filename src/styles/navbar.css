@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    /* border: solid 1px rgb(11, 11, 11); */
+  }
+
+.searchBox{
+    padding: .7rem;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: solid 1px #8c8c8c;
+  }
+
+.searchForm{
+    padding: 1em;
+}
+
+/* .logo{ */
+    /* font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: rgb(138, 12, 12); */
+/* } */

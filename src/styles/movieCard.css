@@ -1,15 +1,57 @@
 .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.4s;
+    padding: 1em;
+    margin: .5em;
+    max-height: 700vh;
+    /* position: relative; */
   }
+
+  .card-img {
+    max-block-size: 620px;
+  }
+
+  @media (max-width: 768px){
+    .card-img{
+      max-block-size: 23rem;
+    }
+  }
+
   
-  /* On mouse-over, add a deeper shadow */
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  /* Add some padding inside the card container */
   .container {
+    max-height: 150px;
     padding: 2px 16px;
+    overflow: auto;
   }
+
+ .w3-tag{
+   border: solid 1px red;
+   border-radius: 12%;
+   background-color: red;
+   padding: 1px;
+   margin: 1px;
+   float: right;
+ }
+
+ /* .movie-over {
+  background-color: white;
+  padding: 1rem;
+  color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transfrom 0.5s ease-in-out;
+
+ } */
+
+ /* .card:hover .movie-over{
+   transform: translate(0%);
+ } */

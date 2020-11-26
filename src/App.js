@@ -1,7 +1,7 @@
 import Movies from "./containers/Movies";
 import Navbar from "./containers/Navbar";
-import "./index.css";
 
+import "./index.css";
 function App() {
   return (
     <>

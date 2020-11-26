@@ -27,17 +27,20 @@ export default function Navbar() {
         </li>
         <li>
           <form className="searchForm" onSubmit={handleSubmit}>
-            <input
-              className="searchBox"
-              type="text"
-              placeholder="Search Movies..."
-              name="searchTerm"
-              value={search}
-              onChange={handleChange}
-            />
-            <button className="searchBtn" type="submit" value="Submit">
-              Search
-            </button>
+            <div className="search">
+              <input
+                className="searchBox"
+                type="text"
+                placeholder="Search Movies..."
+                name="searchTerm"
+                value={search}
+                onChange={handleChange}
+              />
+
+              <button className="searchBtn" type="submit" value="Submit">
+                Search
+              </button>
+            </div>
           </form>
         </li>
       </ul>

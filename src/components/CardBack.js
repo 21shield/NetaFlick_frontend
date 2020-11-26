@@ -9,22 +9,27 @@ export default function Modal(props) {
   return (
     <div className="cardback-wrapper">
       <div className="cardback-header">
-        <p>{title}</p> <span>{release_date}</span>
+        <h3>{title}</h3>
         <span className="close-btn" onClick={closeModal}>
-          CLOSE
+          X
         </span>
+        <h5>
+          Release Date:
+          <span> {release_date} </span>
+        </h5>
       </div>
+      <hr />
       <div className="back-container">
         <strong>Overview: </strong>
 
         <p>{overview}</p>
       </div>
-      <div className="Card-footer">
+      <div className="card-footer">
         <button>
-          <i className="far fa-arrow-alt-circle-up"></i>
+          <i className="far fa-arrow-alt-circle-up"></i>0{" "}
         </button>
         <button onClick={() => closeModal()}>
-          <i className="fa fa-arrow-alt-circle-down"></i>
+          <i className="fa fa-arrow-alt-circle-down"></i> 0
         </button>
       </div>
     </div>

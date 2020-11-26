@@ -1,7 +1,48 @@
 .cardback-wrapper{
-    background-color: cornsilk;
+    background-color: aliceblue;
+    max-height: 700px;
+    width: 500px;
+    padding: 1em;
+    margin: .5em;
+    max-height: 700vh;
+    /* max-block-size: 620px; */
+    /* overflow: hidden; */
+}
+
+.cardback-header h3{
+    background-color: aliceblue;
+    color: black;
 }
 
 .back-container p {
+    width: 300px;
+    background-color: aliceblue;
+    /* padding: 4rem; */
+    margin: 2rem;
     color: black;
+}
+
+.card-footer {
+
+    color: rgb(5, 5, 5);
+    padding: 1rem;
+    cursor: pointer;
+    /* border-radius: .4rem; */
+    border: 1px solid yellow;
+    /* background-color: white; */
+    position: relative;
+    overflow: hidden;
+}
+
+.fa {
+    font-size: 3rem !important;
+}
+.far{
+    font-size: 3rem !important;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

@@ -14,13 +14,28 @@ ul {
   }
 
 .searchBox{
+    border: none;
     padding: .7rem;
     box-sizing: border-box;
     font-size: 16px;
-    border: solid 1px #8c8c8c;
-    border-radius: 2px;
+    background: transparent;
+    /* border: solid 1px #8c8c8c; */
+    border-radius: 18%;
   }
 
+.searchBtn {
+  border: none;
+  background-color:#e50914;;
+  color: aliceblue;
+  line-height: normal;
+  padding: 9px 17px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+    /* margin-top: .5rem; */
+}
+  
 @media(max-width: 768px){
   .searchBox{
     padding: .5rem;
@@ -36,4 +51,11 @@ ul {
 .logo img{ 
   margin-left: 1rem ;
   max-block-size: 3rem;
+}
+
+.search{
+  border-radius: 25px;
+  border: 1px solid rgb(66, 66, 66);
+  background-color: whitesmoke;
+  align-items: center;
 }

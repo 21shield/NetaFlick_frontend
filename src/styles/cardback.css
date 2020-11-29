@@ -1,12 +1,10 @@
 .cardback-wrapper{
+    margin: 2em;
     background-color: aliceblue;
     max-height: 700px;
     width: 500px;
+    height: 600px;
     padding: 1em;
-    /* margin: .5em; */
-    max-height: 700vh;
-    /* max-block-size: 620px; */
-    /* overflow: hidden; */
 }
 
 .cardback-header h3{
@@ -14,11 +12,14 @@
     color: black;
 }
 
+/* .back-container{
+    margin: 25px;
+} */
+
 .back-container p {
-    width: 300px;
+    width: 320px;
+    height: 250px;
     background-color: aliceblue;
-    /* padding: 4rem; */
-    margin: 2rem;
     color: black;
 }
 

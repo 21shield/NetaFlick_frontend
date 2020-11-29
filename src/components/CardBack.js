@@ -13,10 +13,10 @@ export default function Modal(props) {
         <span className="close-btn" onClick={closeModal}>
           X
         </span>
-        <h5>
+        <p>
           Release Date:
           <span> {release_date} </span>
-        </h5>
+        </p>
       </div>
       <hr />
       <div className="back-container">

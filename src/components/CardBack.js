@@ -26,7 +26,7 @@ export default function Modal(props) {
       </div>
       <div className="card-footer">
         <button>
-          <i className="far fa-arrow-alt-circle-up"></i>0{" "}
+          <i className="far fa-arrow-alt-circle-up"></i> 0
         </button>
         <button onClick={() => closeModal()}>
           <i className="fa fa-arrow-alt-circle-down"></i> 0

@@ -1,19 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import MovieCard from "../components/MovieCard";
-import { loadPopMovies } from "../api/index";
 import "../index.css";
-export default function Movies() {
-  // const arr = [1, 2, 3];
-  const [movies, setMovies] = useState([]);
-  useEffect(() => {
-    loadPopMovies().then((data) => {
-      setMovies(data);
-    });
-  }, []);
-
+export default function Movies(props) {
   const renderMovies = () => {
-    return movies.map((mov) => <MovieCard key={mov.id} {...mov} />);
+    return props.movies.map((mov) => <MovieCard key={mov.id} {...mov} />);
   };
-  console.log("this is the movies", movies);
-  return <div className="moviesList">{renderMovies()}</div>;
+  return (
+    <div className="moviesList">
+      {renderMovies()}
+      <h1>this is it</h1>
+    </div>
+  );
 }

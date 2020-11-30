@@ -1,6 +1,6 @@
 .cardback-wrapper{
     margin: 2em;
-    background-color: aliceblue;
+    background-color: rgb(100, 23, 18);
     max-height: 700px;
     width: 500px;
     height: 600px;
@@ -12,9 +12,18 @@
     color: black;
 }
 
-/* .back-container{
-    margin: 25px;
-} */
+@media (max-width: 768px){
+    .cardback-wrapper {
+        height: 320px;
+        width: 250px;
+    }
+
+    .back-container p {
+        height: 40px;
+        width: 60px;
+    }
+ 
+  }
 
 .back-container p {
     width: 320px;

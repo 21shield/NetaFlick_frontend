@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { searchMovies } from "../api/index";
+
 import "../styles/navbar.css";
 
-export default function Navbar() {
+export default function Navbar(props) {
   //   const { search } = Input;
   const [search, setSearch] = useState("");
   const handleChange = (e) => {
@@ -9,21 +11,24 @@ export default function Navbar() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("FETCHING INFO");
+    // console.log("this is the search", search);
+    searchMovies(search).then((data) => {
+      props.searchedMovies(data);
+    });
   };
 
-  console.log(search);
+  //   console.log("from the nav", searchMovies);
   return (
     <div className="nav">
       <ul>
         <li className="logo">
-          <a href="https://fontmeme.com/netflix-font/">
-            <img
-              src="https://fontmeme.com/permalink/201124/8fc629620fcbc615c4064fa937665cdb.png"
-              alt="netflix-font"
-              border="0"
-            />
-          </a>
+          {/* <a href="https://fontmeme.com/netflix-font/"> */}
+          <img
+            src="https://fontmeme.com/permalink/201124/8fc629620fcbc615c4064fa937665cdb.png"
+            alt="netflix-font"
+            border="0"
+          />
+          {/* </a> */}
         </li>
         <li>
           <form className="searchForm" onSubmit={handleSubmit}>

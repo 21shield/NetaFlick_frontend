@@ -38,10 +38,6 @@ export default function MovieCard({
               <b>{title}</b>
               <span className="w3-tag">{vote_average}</span>
             </h3>
-            {/* <p>
-              <strong>Overview: </strong>
-              {overview}
-            </p> */}
           </div>
         </div>
       )}

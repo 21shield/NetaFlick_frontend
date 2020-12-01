@@ -15,12 +15,14 @@ ul {
 
 .searchBox{
     border: none;
-    padding: 5px;
+    padding: 8px;
     box-sizing: border-box;
     font-size: 16px;
     background: transparent;
+    outline: none;
     /* border: solid 1px #8c8c8c; */
     border-radius: 18%;
+    color: black;
   }
 
 .searchBtn {

@@ -3,7 +3,7 @@ export const loadPopMovies = () => {
 };
 
 export const searchMovies = (searchTerm) => {
-  return fetch(`http://localhost:3000/search/ ${searchTerm}`).then((r) =>
+  return fetch(`http://localhost:3000/search/${searchTerm}`).then((r) =>
     r.json()
   );
 };

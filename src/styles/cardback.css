@@ -1,14 +1,35 @@
 .cardback-wrapper{
     margin: 2em;
-    background-color: rgb(100, 23, 18);
+    background-color: white;
     max-height: 700px;
     width: 500px;
     height: 600px;
     padding: 1em;
+    /* transform: rotateY(180deg) */
 }
 
 .cardback-header h3{
-    background-color: aliceblue;
+    background-color: white;
+    color: black;
+    font-size: 33px;
+}
+
+.cardback-header span{
+    background-color: white;
+    color: black;
+}
+
+ .fa-undo{
+    font-size: 12px;
+    background-color: white;
+    color: black;
+}
+
+.cardback-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
     color: black;
 }
 
@@ -27,9 +48,21 @@
 
 .back-container p {
     width: 320px;
-    height: 250px;
-    background-color: aliceblue;
+    background-color: white;
     color: black;
+    font-size: 23px;
+    overflow: hidden;
+}
+
+.back-container h3{
+    background-color: white;
+    color: black;
+}
+
+.back-container{
+    height: 350px;
+    overflow: hidden;
+    background-color: white;
 }
 
 .card-footer {

@@ -11,12 +11,12 @@ function App() {
       setMovies(data);
     });
   }, []);
+
   const setQueryMovies = (array) => {
-    console.log("the return arr", array);
-    setMovies(array);
+    console.log(array);
+    setMovies([...array]);
   };
 
-  // console.log(movies);
   return (
     <>
       <Navbar searchedMovies={setQueryMovies} />

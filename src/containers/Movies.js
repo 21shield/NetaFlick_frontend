@@ -5,10 +5,5 @@ export default function Movies(props) {
   const renderMovies = () => {
     return props.movies.map((mov) => <MovieCard key={mov.id} {...mov} />);
   };
-  return (
-    <div className="moviesList">
-      {renderMovies()}
-      <h1>this is it</h1>
-    </div>
-  );
+  return <div className="moviesList">{renderMovies()}</div>;
 }

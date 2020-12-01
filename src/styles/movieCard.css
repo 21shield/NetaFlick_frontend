@@ -36,21 +36,18 @@
    float: right;
  }
 
- /* .movie-over {
-  background-color: white;
-  padding: 1rem;
-  color: black;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  max-height: 100%;
-  overflow: auto;
-  transform: translateY(100%);
-  transition: transfrom 0.5s ease-in-out;
-
- } */
-
- /* .card:hover .movie-over{
-   transform: translate(0%);
+ /* .play_button{
+  background-color: #ff3d49; */
+    /* position: absolute; */
+  /* float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 111px;
+  font-size: 17px;
+  padding-left: 21px;
+  padding-top: 10px;
+  color: #FFFFFF;
+  cursor: pointer;
  } */

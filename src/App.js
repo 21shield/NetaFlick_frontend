@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   const setQueryMovies = (array) => {
-    console.log(array);
+    // console.log(array);
     setMovies([...array]);
   };
 

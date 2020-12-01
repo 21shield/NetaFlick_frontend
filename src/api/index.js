@@ -7,3 +7,19 @@ export const searchMovies = (searchTerm) => {
     r.json()
   );
 };
+
+export const updateMovie = (movId, val) => {
+  console.log(movId, val);
+  return fetch(`http://localhost:3000/movies/updateMovie`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      id: movId,
+      value: val,
+    }),
+  }).then((r) => {
+    r.json();
+  });
+};

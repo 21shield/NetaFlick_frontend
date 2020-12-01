@@ -34,6 +34,12 @@ export default function MovieCard({
         <div className="card" onClick={showModal}>
           <img className="card-img" src={IMG_API + poster_path} alt={title} />
           <div className="container">
+            {/* <i
+              className="fas fa-play play_button"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Play Trailer"
+            ></i> */}
             <h3>
               <b>{title}</b>
               <span className="w3-tag">{vote_average}</span>

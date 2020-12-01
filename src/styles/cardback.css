@@ -64,28 +64,42 @@
     overflow: hidden;
     background-color: white;
 }
+.back-container span{
+    background-color: white;
+    color: black;
+}
 
 .card-footer {
 
     color: rgb(5, 5, 5);
     padding: 1rem;
     cursor: pointer;
-    /* border-radius: .4rem; */
-    border: 1px solid yellow;
-    /* background-color: white; */
     position: relative;
     overflow: hidden;
+    background-color: white;
 }
 
-.fa {
+/* .fa {
+    background-color: white;
     font-size: 3rem !important;
-}
-.far{
+    color: rgb(123, 4, 4);
+    pointer-events: none;
+} */
+
+.vote {
+    background-color: white;
     font-size: 3rem !important;
+    color: rgb(7, 37, 121);
+    pointer-events: none;
+
 }
 
 .card-footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+button{
+    background-color: white;
 }

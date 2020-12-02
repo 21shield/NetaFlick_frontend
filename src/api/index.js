@@ -10,7 +10,7 @@ export const searchMovies = (searchTerm) => {
 
 export const updateMovie = (movId, val) => {
   console.log(movId, val);
-  return fetch(`http://localhost:3000/movies/updateMovie`, {
+  return fetch(`http://localhost:3000/movies`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

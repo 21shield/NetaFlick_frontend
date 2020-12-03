@@ -19,7 +19,5 @@ export const updateMovie = (movId, val) => {
       id: movId,
       value: val,
     }),
-  }).then((r) => {
-    r.json();
-  });
+  }).then((r) => r.json());
 };

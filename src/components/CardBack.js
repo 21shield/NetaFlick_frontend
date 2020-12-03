@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { updateMovie } from "../api";
 import "../styles/cardback.css";
 
@@ -7,9 +7,8 @@ export default function CardBack(props) {
   const { closeModal } = props;
   // const [btn, setBtn] = useState();
   const updateVote = (e) => {
-    console.log(e.target.value);
     updateMovie(id, e.target.value).then((data) => {
-      console.log("FROMT THE BACK", data);
+      console.log("from line 13", data);
     });
   };
 

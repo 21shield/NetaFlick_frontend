@@ -9,7 +9,6 @@ export const searchMovies = (searchTerm) => {
 };
 
 export const updateMovie = (movId, val) => {
-  console.log(movId, val);
   return fetch(`http://localhost:3000/movies`, {
     method: "POST",
     headers: {
@@ -20,4 +19,8 @@ export const updateMovie = (movId, val) => {
       value: val,
     }),
   }).then((r) => r.json());
+};
+
+export const renderMovie = (id) => {
+  return fetch(`http://localhost:3000/movies/${id}`).then((r) => r.json());
 };

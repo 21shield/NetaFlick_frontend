@@ -11,6 +11,9 @@ export default function MovieCard({
   vote_average,
   release_date,
   id,
+  // updateMov,
+  // thumbs_up,
+  // thumbs_down,
 }) {
   const [show, setShow] = useState(false);
 
@@ -20,7 +23,6 @@ export default function MovieCard({
   const closeModal = () => {
     setShow(!show);
   };
-
   return (
     <>
       {show ? (
@@ -29,6 +31,7 @@ export default function MovieCard({
           closeModal={closeModal}
           release
           data={{ release_date, overview, title, id }}
+          // updateMov={updateMov}
         />
       ) : (
         <div className="card" onClick={showModal}>

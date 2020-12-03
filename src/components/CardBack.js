@@ -1,16 +1,23 @@
-import React from "react";
-import { updateMovie } from "../api";
+import React, { useState, useEffect } from "react";
+import { updateMovie, renderMovie } from "../api";
 import "../styles/cardback.css";
 
 export default function CardBack(props) {
+  const [currentMovie, setCurrentMovie] = useState({});
   const { title, overview, release_date, id } = props.data;
   const { closeModal } = props;
-  // const [btn, setBtn] = useState();
   const updateVote = (e) => {
     updateMovie(id, e.target.value).then((data) => {
-      console.log("from line 13", data);
+      // props.updateMov(data.movie);
+      console.log("FROM THE UPDATE", data);
     });
   };
+
+  useEffect(() => {
+    renderMovie(id).then((data) => {
+      console.log("RENDERED ON LOAD", data);
+    });
+  }, [id]);
 
   return (
     <div className="cardback-wrapper">
@@ -35,6 +42,7 @@ export default function CardBack(props) {
           <button value={true} onClick={updateVote}>
             <i className="far fa-arrow-alt-circle-up vote"></i>
           </button>
+          {/* <div className="votesNum"> {thumbs_up}</div> */}
         </div>
 
         <div className="dwnBtn">
@@ -44,6 +52,7 @@ export default function CardBack(props) {
               aria-hidden="true"
             ></i>
           </button>
+          {/* <div className="votesNum"> {thumbs_up}</div> */}
         </div>
       </div>
     </div>

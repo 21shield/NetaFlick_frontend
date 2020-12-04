@@ -12,7 +12,6 @@ export default function Navbar(props) {
     e.preventDefault();
     if (search.length > 1) {
       searchMovies(search).then((data) => {
-        console.log(data);
         props.searchedMovies(data);
       });
     } else {

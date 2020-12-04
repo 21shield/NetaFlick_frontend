@@ -9,8 +9,8 @@ export const searchMovies = (searchTerm) => {
 };
 
 export const updateMovie = (movId, val) => {
-  return fetch(`http://localhost:3000/movies`, {
-    method: "POST",
+  return fetch(`http://localhost:3000/movies/${movId}`, {
+    method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },

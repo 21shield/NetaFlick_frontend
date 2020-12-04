@@ -16,21 +16,6 @@ function App() {
     setMovies([...array]);
   };
 
-  // const updateMovie = (newMov) => {
-  //   // update the array with new found info only the thumbs up and down
-  //   console.log("made it back to app", newMov);
-  //   let updatedMovies = movies.map((mov) => {
-  //     if (Number(newMov.movieId) === mov.id) {
-  //       mov.thumbs_down = newMov.thumbs_down;
-  //       mov.thumbs_up = newMov.thumbs_up;
-  //     } else {
-  //       return mov;
-  //     }
-  //     return mov;
-  //   });
-  //   setMovies([...updatedMovies]);
-  // };
-
   return (
     <>
       <Navbar searchedMovies={setQueryMovies} />

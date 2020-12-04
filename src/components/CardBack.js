@@ -8,8 +8,8 @@ export default function CardBack(props) {
     title: null,
     overview: null,
     release_date: null,
-    thumbs_up: null,
-    thumbs_down: null,
+    thumbs_up: 0,
+    thumbs_down: 0,
   });
   const { id } = props.data;
 
@@ -22,7 +22,7 @@ export default function CardBack(props) {
 
   useEffect(() => {
     renderMovie(id).then((data) => {
-      setCurrentMovie({ ...data.movie });
+      setCurrentMovie(data.movie);
     });
   }, [id]);
   return (
@@ -33,32 +33,38 @@ export default function CardBack(props) {
           <i className="fa fa-undo" aria-hidden="true"></i>
         </span>
       </div>
-      <hr />
       <div className="back-container">
         <h3>Overview: </h3>
 
         <p>{currentMovie.overview}</p>
         <p>
-          Release Date:
+          <strong>Release: </strong>
           <span> {currentMovie.release_date} </span>
+          <br />
+          <strong>Director: </strong>
+          <span> {currentMovie.director} </span>
         </p>
       </div>
       <div className="card-footer">
-        <div className="upBtn">
+        <div className="Btn">
           <button value={true} onClick={updateVote}>
             <i className="far fa-arrow-alt-circle-up vote"></i>
           </button>
-          <div className="votesNum"> {currentMovie.thumbs_up}</div>
+          <div className="votesNum">
+            {currentMovie.thumbs_up ? currentMovie.thumbs_up : 0}
+          </div>
         </div>
 
-        <div className="dwnBtn">
+        <div className="Btn">
           <button value={false} onClick={updateVote}>
             <i
               className="fa fa-arrow-circle-o-down vote"
               aria-hidden="true"
             ></i>
           </button>
-          <div className="votesNum"> {currentMovie.thumbs_down}</div>
+          <div className="votesNum">
+            {currentMovie.thumbs_down ? currentMovie.thumbs_down : 0}
+          </div>
         </div>
       </div>
     </div>

@@ -1,17 +1,28 @@
+p{
+    margin: 0 0 1rem 0;
+}
 .cardback-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 2em;
     background-color: white;
     max-height: 700px;
     width: 500px;
     height: 600px;
     padding: 1em;
-    /* transform: rotateY(180deg) */
+}
+.cardback-header{
+    border-bottom: 1px solid rgb(122, 7, 7);
+    max-height: 100px;
+    min-height: 100px;
 }
 
 .cardback-header h3{
     background-color: white;
     color: black;
-    font-size: 33px;
+    font-size: clamp(20px, 2.5vw, 33px);
+
 }
 
 .cardback-header span{
@@ -31,6 +42,7 @@
     justify-content: space-between;
     background-color: white;
     color: black;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 768px){
@@ -51,7 +63,11 @@
     background-color: white;
     color: black;
     font-size: 23px;
-    overflow: hidden;
+}
+
+.back-container strong {
+    background-color: white;
+    color: black;
 }
 
 .back-container h3{
@@ -60,46 +76,55 @@
 }
 
 .back-container{
-    height: 350px;
-    overflow: hidden;
+    max-height: 400px;
+    min-height: 400px;
+    overflow: scroll;
     background-color: white;
 }
+
 .back-container span{
     background-color: white;
     color: black;
 }
 
 .card-footer {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: rgb(5, 5, 5);
-    padding: 1rem;
     cursor: pointer;
     position: relative;
-    overflow: hidden;
     background-color: white;
 }
 
-/* .fa {
+.Btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: white;
-    font-size: 3rem !important;
-    color: rgb(123, 4, 4);
-    pointer-events: none;
-} */
+}
+
+.votesNum{
+    margin: 1rem;
+    font-size: 22px;
+    color: black;
+    background-color: white;
+}
 
 .vote {
     background-color: white;
     font-size: 3rem !important;
     color: rgb(7, 37, 121);
     pointer-events: none;
-
 }
-
-.card-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.fa-undo{
+    font-size: 1rem !important;
+}
+.fa{
+    color: rgb(161, 14, 14);
 }
 
 button{
     background-color: white;
+    border: none;
 }
